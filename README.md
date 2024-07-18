@@ -49,7 +49,7 @@ Download some models from [Ollama](https://ollama.com/library). Make sure to fol
 Lastly, run the web app using Python:
 
 ```markdown
-python main.py
+python app.py
 ```
 
 This will start the Flask development server, and you can access the web app by navigating to `http://localhost:5000` in your web browser.
