@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraphrase Sentence</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Paraphrase Sentence</h1>
+        <div class="card">
+            <div class="card-body">
+                <p class="lead">Original Sentence:</p>
+                <p>{{ original_sentence }}</p>
+                <span class="tinybutton" onclick="navigator.clipboard.writeText('{{ original_sentence }}'); alert('Copied to clipboard!'); window.open('https://quillbot.com/paraphrasing-tool', '_blank')">Copy to Quilbot 🤖🖋</span>
+                <span class="tinybutton" onclick="navigator.clipboard.writeText('{{ original_sentence }}'); document.getElementById('rephrase').value = '{{ original_sentence }}';">Keep Original 📜✍</span>
+                        
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <form method="post" action="/paraphrase">
+                    <div class="form-group">
+                        <label for="rephrase">Rephrased Sentence:</label>
+                        
+                        <textarea class="form-control" id="rephrase" name="rephrase" rows="3" required></textarea>
+                        <br>
+                        </div>
+                    <button type="submit" class="btn btn-primary btn-block">Next Sentence</button>
+                </form>
+                <p class="text-muted mt-3">Sentences left to paraphrase: {{ sentences_left }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

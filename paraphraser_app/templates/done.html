@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rephrased Text</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">All Sentences Rephrased!</h1>
+        <div class="card">
+            <div class="card-body">
+                <p>{{ rephrased_essay }}</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button onclick="navigator.clipboard.writeText('{{ rephrased_essay }}');" style="background-color: green; font-weight: bolder;" class="btn btn-primary">Copy to Clipboard</button>
+            <br>
+            <a href="https://gptzero.com/" target="_blank" class="btn btn-primary">AI checker #1</a>
+            <a href="https://quillbot.com/ai-content-detector" target="_blank" class="btn btn-primary">AI checker #2</a>
+            <a href="https://quillbot.com/grammar-check" target="_blank" class="btn btn-primary">Grammar Checker</a>
+            <a href="https://quillbot.com/paraphrasing-tool" target="_blank" class="btn btn-primary">Quillbot Paraphraser</a>
+            <br>
+            <a href="{{ url_for('index') }}" style="background-color:rgb(0, 93, 129); font-weight: bolder;" class="btn btn-primary">Start Over</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding to the container */
+}
+
+h1 {
+    color: #343a40;
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 20px; /* Add some space between the heading and the card */
+}
+
+.card {
+    margin-bottom: 20px; /* Add some space between cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none; /* Remove the default border */
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Add a border to the textarea */
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    margin: 10px; /* Add spacing around the buttons */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+
+.tinybutton {
+    cursor: pointer;
+    border: 2px solid rgba(0, 255, 136, 0.096);
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #bf69a2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;;
+}
+
+.tinybutton:hover {
+    background-color: #ff69a2;
+}
