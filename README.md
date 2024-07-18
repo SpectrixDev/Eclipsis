@@ -8,10 +8,11 @@
 
 A Flask web app I made for fun in an hour or two that lets you generate text with any LLM locally through [Ollama](https://ollama.com/), and rewrite it sentence by sentence to avoid AI Detectors with the help of tools.
 
-**What is this?** 🤔
----------------
+## What is this? 🤔
+[![Index](https://i.imgur.com/iXKA6Zz.png)](https://i.imgur.com/iXKA6Zz.png) [![ParaphrasePage](https://i.imgur.com/2hz7qBE.png)](https://i.imgur.com/2hz7qBE.png)
 
-This project is a web-based tool that uses AI-powered language generation to help users paraphrase sentences and avoid detection by AI-powered plagiarism detectors. The tool uses any LLM of your choice through Ollama to generate new sentences, and then allows users to rewrite them sentence by sentence to create a unique piece of writing.
+This project is a web-based tool that uses AI-powered language generation to help users paraphrase sentences and avoid detection by AI-powered plagiarism detectors. The tool allows users to choose any Language Model (LLM) through Ollama to generate new sentences and rewrite them sentence by sentence to create unique content.
+
 
 **How does it work?** 🤔
 ------------------
